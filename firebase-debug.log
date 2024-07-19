@@ -1,0 +1,279 @@
+[debug] [2024-07-13T00:39:23.926Z] ----------------------------------------------------------------------
+[debug] [2024-07-13T00:39:23.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-07-13T00:39:23.931Z] CLI Version:   13.13.2
+[debug] [2024-07-13T00:39:23.931Z] Platform:      win32
+[debug] [2024-07-13T00:39:23.931Z] Node Version:  v18.13.0
+[debug] [2024-07-13T00:39:23.933Z] Time:          Sat Jul 13 2024 06:09:23 GMT+0530 (India Standard Time)
+[debug] [2024-07-13T00:39:23.933Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-13T00:39:23.938Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2024-07-13T00:39:25.192Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-07-13T00:39:25.193Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=35205154&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-07-13T00:40:54.884Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-07-13T00:40:54.884Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-07-13T00:40:58.961Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-07-13T00:40:58.961Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as akchaudhary695@gmail.com 
+[debug] [2024-07-13T00:41:10.220Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-07-13T00:43:06.836Z] ----------------------------------------------------------------------
+[debug] [2024-07-13T00:43:06.840Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-07-13T00:43:06.841Z] CLI Version:   13.13.2
+[debug] [2024-07-13T00:43:06.841Z] Platform:      win32
+[debug] [2024-07-13T00:43:06.842Z] Node Version:  v18.13.0
+[debug] [2024-07-13T00:43:06.843Z] Time:          Sat Jul 13 2024 06:13:06 GMT+0530 (India Standard Time)
+[debug] [2024-07-13T00:43:06.844Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-13T00:43:06.865Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-13T00:43:06.866Z] > authorizing via signed-in user (akchaudhary695@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\react-myapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-13T00:44:15.386Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-13T00:44:16.979Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-13T00:44:16.980Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project arunecommerceapp (arunecommerceapp) 
+[info] 
+=== Hosting Setup
+[debug] [2024-07-13T00:44:24.736Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp [none]
+[debug] [2024-07-13T00:44:25.510Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp 200
+[debug] [2024-07-13T00:44:25.510Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp {"projectId":"arunecommerceapp","projectNumber":"384068758619","displayName":"arunecommerceapp","name":"projects/arunecommerceapp","resources":{"hostingSite":"arunecommerceapp"},"state":"ACTIVE","etag":"1_28f0abd1-f551-482d-a262-757d4055d20c"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-07-13T00:44:59.884Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-07-13T00:45:00.562Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-07-13T00:45:00.563Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.12.3","browserURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.12.3/firebase.tgz"},"live":{"version":"10.12","browserURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.12/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.12.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.12.3/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.12.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.12.3/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.12.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.12.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.12.3/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2024-07-13T00:45:20.143Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-07-13T00:46:06.114Z] ----------------------------------------------------------------------
+[debug] [2024-07-13T00:46:06.117Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-07-13T00:46:06.118Z] CLI Version:   13.13.2
+[debug] [2024-07-13T00:46:06.119Z] Platform:      win32
+[debug] [2024-07-13T00:46:06.119Z] Node Version:  v18.13.0
+[debug] [2024-07-13T00:46:06.121Z] Time:          Sat Jul 13 2024 06:16:06 GMT+0530 (India Standard Time)
+[debug] [2024-07-13T00:46:06.122Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-13T00:46:06.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-13T00:46:06.313Z] > authorizing via signed-in user (akchaudhary695@gmail.com)
+[debug] [2024-07-13T00:46:06.314Z] [iam] checking project arunecommerceapp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-13T00:46:06.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/arunecommerceapp:testIamPermissions [none]
+[debug] [2024-07-13T00:46:06.317Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/arunecommerceapp:testIamPermissions x-goog-quota-user=projects/arunecommerceapp
+[debug] [2024-07-13T00:46:06.318Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/arunecommerceapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-13T00:46:08.213Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/arunecommerceapp:testIamPermissions 200
+[debug] [2024-07-13T00:46:08.214Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/arunecommerceapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-13T00:46:08.215Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp [none]
+[debug] [2024-07-13T00:46:09.180Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp 200
+[debug] [2024-07-13T00:46:09.180Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/arunecommerceapp {"projectId":"arunecommerceapp","projectNumber":"384068758619","displayName":"arunecommerceapp","name":"projects/arunecommerceapp","resources":{"hostingSite":"arunecommerceapp"},"state":"ACTIVE","etag":"1_28f0abd1-f551-482d-a262-757d4055d20c"}
+[info] 
+[info] === Deploying to 'arunecommerceapp'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-07-13T00:46:09.193Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions [none]
+[debug] [2024-07-13T00:46:09.193Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-07-13T00:46:11.666Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions 200
+[debug] [2024-07-13T00:46:11.666Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions {"name":"projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[arunecommerceapp]: beginning deploy... 
+[info] i  hosting[arunecommerceapp]: found 26 files in build 
+[debug] [2024-07-13T00:46:30.376Z] [hosting] uploading with 200 concurrency
+[debug] [2024-07-13T00:46:30.427Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2024-07-13T00:46:31.155Z] [hosting] hash cache [YnVpbGQ] stored for 26 files
+[debug] [2024-07-13T00:46:31.156Z] [hosting][hash queue][FINAL] {"max":654,"min":329,"avg":349.34615384615387,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":695}
+[debug] [2024-07-13T00:46:31.158Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2:populateFiles [none]
+[debug] [2024-07-13T00:46:31.158Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2:populateFiles {"files":{"/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/asset-manifest.json":"bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8","/static/media/northamerica.54f6e051ef24c50e9027.jpeg":"967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3","/static/media/bollywood.b2010861066e534ea4ef.jpeg":"3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0","/static/media/asia.b722572f3d5aebad2146.jpeg":"576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed","/static/media/hollywood.82af6e9dea2f69a4413b.jpeg":"9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed","/static/media/europe.156d2a7119e541820973.jpeg":"ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2","/index.html":"f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/js/680.a960c578.chunk.js.map":"1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56","/static/media/africa.4fa324c5fa7a99b0e8e4.jpeg":"2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056","/static/js/main.847b3cd2.js.LICENSE.txt":"9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b","/static/js/453.402631dd.chunk.js.map":"7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871","/static/js/24.a351259a.chunk.js.map":"80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605","/static/js/24.a351259a.chunk.js":"982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6","/static/js/680.a960c578.chunk.js":"3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b","/static/js/453.402631dd.chunk.js":"d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867","/static/css/680.4b935b5e.chunk.css":"1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a","/static/css/680.4b935b5e.chunk.css.map":"a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/static/css/main.17b12c6c.css":"c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281","/static/js/main.847b3cd2.js":"385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a","/static/css/main.17b12c6c.css.map":"736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405","/static/js/main.847b3cd2.js.map":"36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6"}}
+[debug] [2024-07-13T00:46:32.470Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2:populateFiles 200
+[debug] [2024-07-13T00:46:32.470Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2:populateFiles {"uploadRequiredHashes":["bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281","2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056","576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed","967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3","a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60","bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2","385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a","9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed","1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56","982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6","3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b","d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867","1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a","80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605","36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6","3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2","3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0","736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405","eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871","9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files"}
+[debug] [2024-07-13T00:46:32.477Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2024-07-13T00:46:32.477Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2024-07-13T00:46:32.479Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281 [none]
+[debug] [2024-07-13T00:46:32.479Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281 [stream]
+[debug] [2024-07-13T00:46:32.481Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056 [none]
+[debug] [2024-07-13T00:46:32.481Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056 [stream]
+[debug] [2024-07-13T00:46:32.483Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed [none]
+[debug] [2024-07-13T00:46:32.483Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed [stream]
+[debug] [2024-07-13T00:46:32.485Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3 [none]
+[debug] [2024-07-13T00:46:32.485Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3 [stream]
+[debug] [2024-07-13T00:46:32.488Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60 [none]
+[debug] [2024-07-13T00:46:32.489Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60 [stream]
+[debug] [2024-07-13T00:46:32.491Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8 [none]
+[debug] [2024-07-13T00:46:32.491Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8 [stream]
+[debug] [2024-07-13T00:46:32.493Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2024-07-13T00:46:32.493Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2024-07-13T00:46:32.496Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2 [none]
+[debug] [2024-07-13T00:46:32.496Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2 [stream]
+[debug] [2024-07-13T00:46:32.498Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a [none]
+[debug] [2024-07-13T00:46:32.498Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a [stream]
+[debug] [2024-07-13T00:46:32.499Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed [none]
+[debug] [2024-07-13T00:46:32.500Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed [stream]
+[debug] [2024-07-13T00:46:32.502Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56 [none]
+[debug] [2024-07-13T00:46:32.502Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56 [stream]
+[debug] [2024-07-13T00:46:32.504Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6 [none]
+[debug] [2024-07-13T00:46:32.504Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6 [stream]
+[debug] [2024-07-13T00:46:32.505Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b [none]
+[debug] [2024-07-13T00:46:32.505Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b [stream]
+[debug] [2024-07-13T00:46:32.507Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867 [none]
+[debug] [2024-07-13T00:46:32.507Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867 [stream]
+[debug] [2024-07-13T00:46:32.508Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a [none]
+[debug] [2024-07-13T00:46:32.508Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a [stream]
+[debug] [2024-07-13T00:46:32.509Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605 [none]
+[debug] [2024-07-13T00:46:32.509Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605 [stream]
+[debug] [2024-07-13T00:46:32.511Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6 [none]
+[debug] [2024-07-13T00:46:32.511Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6 [stream]
+[debug] [2024-07-13T00:46:32.514Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2024-07-13T00:46:32.514Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2024-07-13T00:46:32.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2 [none]
+[debug] [2024-07-13T00:46:32.516Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2 [stream]
+[debug] [2024-07-13T00:46:32.517Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0 [none]
+[debug] [2024-07-13T00:46:32.517Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0 [stream]
+[debug] [2024-07-13T00:46:32.518Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405 [none]
+[debug] [2024-07-13T00:46:32.518Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405 [stream]
+[debug] [2024-07-13T00:46:32.520Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [none]
+[debug] [2024-07-13T00:46:32.520Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2024-07-13T00:46:32.521Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2024-07-13T00:46:32.522Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2024-07-13T00:46:32.523Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871 [none]
+[debug] [2024-07-13T00:46:32.523Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871 [stream]
+[debug] [2024-07-13T00:46:32.525Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b [none]
+[debug] [2024-07-13T00:46:32.525Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b [stream]
+[debug] [2024-07-13T00:46:32.526Z] [hosting][populate queue][FINAL] {"max":1326,"min":1326,"avg":1326,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1376}
+[debug] [2024-07-13T00:46:32.526Z] [hosting] uploads queued: 26
+[debug] [2024-07-13T00:46:34.066Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2024-07-13T00:46:34.067Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2024-07-13T00:46:34.079Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 200
+[debug] [2024-07-13T00:46:34.079Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2024-07-13T00:46:34.130Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2024-07-13T00:46:34.130Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2024-07-13T00:46:34.165Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6 200
+[debug] [2024-07-13T00:46:34.165Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/982a93a12b34173eb06f4bb4ff4aef0ca408551c96413f15e78031b29b7a40a6 [stream]
+[debug] [2024-07-13T00:46:34.175Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed 200
+[debug] [2024-07-13T00:46:34.175Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/576528dbbfa296c7ff2dbefe1e348f8c003553fde0046e9a57eb8788dcbcfbed [stream]
+[debug] [2024-07-13T00:46:34.629Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a 200
+[debug] [2024-07-13T00:46:34.629Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/385f8dd688e4350560f8999f5033a6c922a7145509b9f941235639016543981a [stream]
+[debug] [2024-07-13T00:46:34.691Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2024-07-13T00:46:34.691Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2024-07-13T00:46:34.723Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b 200
+[debug] [2024-07-13T00:46:34.724Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3382287e8ca0db742bdee60035f85ad51a56502855e2077de91ecf7496efa29b [stream]
+[debug] [2024-07-13T00:46:34.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3 200
+[debug] [2024-07-13T00:46:34.815Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/967426030fe35dae2308936644d8789e30f0c8b8f507e295920e82caca0795a3 [stream]
+[debug] [2024-07-13T00:46:34.830Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871 200
+[debug] [2024-07-13T00:46:34.830Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/7e551263e4666b123bc18db3f283baa6fe28669173a9661f4e43a94956b64871 [stream]
+[debug] [2024-07-13T00:46:34.848Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60 200
+[debug] [2024-07-13T00:46:34.848Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/a71637feb21069828978adc517b663ac0d46b5405844c3ea480bc19a3fbb4b60 [stream]
+[debug] [2024-07-13T00:46:34.901Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605 200
+[debug] [2024-07-13T00:46:34.901Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/80a045c4141fb5889f86958557f99144f33d0d5baeace469203719715e5cb605 [stream]
+[debug] [2024-07-13T00:46:35.030Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0 200
+[debug] [2024-07-13T00:46:35.030Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/3d00b7191e3bafe0d23394c73fc39ff99b9f53255075188ad9c1a02d46767bf0 [stream]
+[debug] [2024-07-13T00:46:35.206Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867 200
+[debug] [2024-07-13T00:46:35.206Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/d1816ba6fa90dba8782a755b55eb81db814546f655a84298df644028b9b33867 [stream]
+[debug] [2024-07-13T00:46:35.313Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056 200
+[debug] [2024-07-13T00:46:35.313Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/2948d52a32f0370ca106a03dbf0845681e8071ac6edc7bd1c839c1d7aab0e056 [stream]
+[debug] [2024-07-13T00:46:35.322Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b 200
+[debug] [2024-07-13T00:46:35.322Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9d08fdfc15f91d27bb60eda3418635f0d8aa8a001caddcfcd8aec8f7948bfd5b [stream]
+[debug] [2024-07-13T00:46:35.384Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed 200
+[debug] [2024-07-13T00:46:35.384Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/9eb4543daddee091f5f2576bba9eb9be16596c293fb1f2a2977286bf91f968ed [stream]
+[debug] [2024-07-13T00:46:35.407Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2 200
+[debug] [2024-07-13T00:46:35.407Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ca82e11836be9a5277b4059a422e72a440c455704c0b91651109b56988efc5d2 [stream]
+[debug] [2024-07-13T00:46:35.427Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8 200
+[debug] [2024-07-13T00:46:35.427Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/bd5d58f99910a37c78a9514dfb30da9eb805aa80a1bb2383f1e8fb439cfc14b8 [stream]
+[debug] [2024-07-13T00:46:35.463Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56 200
+[debug] [2024-07-13T00:46:35.463Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1763fb40baffb43b66f694931253235ced791dd2fe509c069c54b33e3f1b4a56 [stream]
+[debug] [2024-07-13T00:46:35.498Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2 200
+[debug] [2024-07-13T00:46:35.499Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/f4b03f614d007d2e46a858dd3ba395638db87fb8723a407bdb7855632fcc55d2 [stream]
+[debug] [2024-07-13T00:46:35.548Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6 200
+[debug] [2024-07-13T00:46:35.548Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/36bbc7014bc2e9d76cf581c437f8a13484dee4effee0936946efa81b0ec2c0e6 [stream]
+[debug] [2024-07-13T00:46:35.628Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a 200
+[debug] [2024-07-13T00:46:35.628Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/1a8dd17940ea539ffbd691bd2e96abae713e388f35457a3cd35851350da0d53a [stream]
+[debug] [2024-07-13T00:46:35.738Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405 200
+[debug] [2024-07-13T00:46:35.739Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/736e702afcddc9decba2a94bf6875e5a412bf1b00b9502cd83331c9a1ff8e405 [stream]
+[debug] [2024-07-13T00:46:35.950Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2024-07-13T00:46:35.950Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2024-07-13T00:46:36.117Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281 200
+[debug] [2024-07-13T00:46:36.118Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/arunecommerceapp/versions/4fea75dc57bd1ed2/files/c993fd0587e413fc54694edecc6a3139897cb8d7b94117d574b0f75e3cc78281 [stream]
+[debug] [2024-07-13T00:46:36.118Z] [hosting][upload queue][FINAL] {"max":3646,"min":1595,"avg":2568.115384615385,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":3647}
+[info] +  hosting[arunecommerceapp]: file upload complete 
+[debug] [2024-07-13T00:46:36.138Z] [hosting] deploy completed after 5858ms
+[debug] [2024-07-13T00:46:36.139Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "arunecommerceapp"
+    },
+    "version": "projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2"
+  }
+]
+[info] i  hosting[arunecommerceapp]: finalizing version... 
+[debug] [2024-07-13T00:46:36.143Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions/4fea75dc57bd1ed2 updateMask=status%2Cconfig
+[debug] [2024-07-13T00:46:36.143Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions/4fea75dc57bd1ed2 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-07-13T00:46:37.587Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions/4fea75dc57bd1ed2 200
+[debug] [2024-07-13T00:46:37.587Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/versions/4fea75dc57bd1ed2 {"name":"projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-13T00:42:23.666295Z","createUser":{"email":"akchaudhary695@gmail.com"},"finalizeTime":"2024-07-13T00:42:50.327858Z","finalizeUser":{"email":"akchaudhary695@gmail.com"}}
+[debug] [2024-07-13T00:46:37.587Z] [hosting] finalized version for arunecommerceapp:[object Object]
+[info] +  hosting[arunecommerceapp]: version finalized 
+[info] i  hosting[arunecommerceapp]: releasing new version... 
+[debug] [2024-07-13T00:46:37.596Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/channels/live/releases versionName=projects%2F384068758619%2Fsites%2Farunecommerceapp%2Fversions%2F4fea75dc57bd1ed2
+[debug] [2024-07-13T00:46:37.596Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/channels/live/releases {}
+[debug] [2024-07-13T00:46:39.318Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/channels/live/releases 200
+[debug] [2024-07-13T00:46:39.318Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/arunecommerceapp/channels/live/releases {"name":"projects/384068758619/sites/arunecommerceapp/channels/live/releases/1720831371327000","version":{"name":"projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-13T00:42:23.666295Z","createUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"},"finalizeTime":"2024-07-13T00:42:50.327858Z","finalizeUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"}},"type":"DEPLOY","releaseTime":"2024-07-13T00:42:51.327Z","releaseUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"}}
+[debug] [2024-07-13T00:46:39.318Z] [hosting] release: {"name":"projects/384068758619/sites/arunecommerceapp/channels/live/releases/1720831371327000","version":{"name":"projects/384068758619/sites/arunecommerceapp/versions/4fea75dc57bd1ed2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-07-13T00:42:23.666295Z","createUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"},"finalizeTime":"2024-07-13T00:42:50.327858Z","finalizeUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"}},"type":"DEPLOY","releaseTime":"2024-07-13T00:42:51.327Z","releaseUser":{"email":"akchaudhary695@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIO60TcZfnw7-vsASDKRHWtYr4wVgttXqlHXS3z0uJdRBRfoMsp"}}
+[info] +  hosting[arunecommerceapp]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/arunecommerceapp/overview
+[info] Hosting URL: https://arunecommerceapp.web.app
+[debug] [2024-07-13T00:47:10.617Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:268:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
