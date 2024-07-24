@@ -1,28 +1,20 @@
-import React, { useContext } from "react";
-import AddNewVote from "./classMonitorVoteProject/components/AddNewVote";
-import VoteProvider from "./classMonitorVoteProject/store/VoteProvider";
-import "./App.css";
+import React from "react";
+import SignUp from "./TrackMyExpenses/components/SignUp";
+import { Container } from "react-bootstrap";
+const App =()=> {
 
-import VoteContext from "./classMonitorVoteProject/store/VoteContext";
-import Candidates from "./classMonitorVoteProject/components/Candidates";
 
-const App = () => {
-  const useVote = useContext(VoteContext);
-
-  console.log("Total passwords in App:", useVote.totalQuantity);
   return (
-    <div>
-      <div >
+     
+     <>
+     <Container>
+     <h2>Track my Expenses</h2>
+     <SignUp></SignUp>
+     </Container>
+     </>
+      
        
-        <VoteProvider>
-          <div className="app">
-          <h2>Class Monitor Vote System</h2>
-         <AddNewVote></AddNewVote>
-          </div>
-           <Candidates></Candidates>
-        </VoteProvider>
-      </div>
-    </div>
   );
-};
+}
+
 export default App;
