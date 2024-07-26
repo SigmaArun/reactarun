@@ -4,6 +4,7 @@ import AuthContext from "./AuthContext";
 
 
 const AuthProvider=(props)=>{
+  
   const initialToken=localStorage.getItem('token');
   const initialEmail = localStorage.getItem('email');
 

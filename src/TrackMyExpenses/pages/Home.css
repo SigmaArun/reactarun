@@ -1,0 +1,15 @@
+.outerdiv{
+    height: 60px;
+    border-bottom: solid black;
+}
+
+.outerdiv button{
+    margin-right: 0px;
+}
+
+.profile{
+    margin-top: 40px;
+}
+.message{
+    
+}
