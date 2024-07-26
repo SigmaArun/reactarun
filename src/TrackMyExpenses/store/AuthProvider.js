@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AuthContext from "./AuthContext";
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -7,6 +8,7 @@ const AuthProvider=(props)=>{
   
   const initialToken=localStorage.getItem('token');
   const initialEmail = localStorage.getItem('email');
+  const history = useHistory();
 
 const [token,setToken]=useState(initialToken);
 const [userEmail, setUserEmail] = useState(initialEmail);
@@ -23,11 +25,25 @@ const loginHandler=(token,email)=>{
  
 }
 
+const logoutHandler=()=>{
+  setToken(null);
+  setUserEmail(null);
+  localStorage.removeItem('token');
+  localStorage.removeItem('email');
+  if (history) {
+    history.replace('/home');
+  }
+  // history.push('/home');
+  //callback();
+  
+  }
+
   const  contextObject={
        token:token,
        userEmail: userEmail,
        isLoggedIn:userIsLoggedIn,
        login:loginHandler,
+       logout:logoutHandler,
       
 
     };
