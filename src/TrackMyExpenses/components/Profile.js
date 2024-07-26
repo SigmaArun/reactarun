@@ -11,7 +11,7 @@ const Profile = (props) => {
   // i will add a useEffect to fetch data 
 
   useEffect(() => {
-    // Fetch profile data from Firebase on component mount
+    // Fetching  profile data from Firebase on component mount { i will practice 100 times }
     const fetchProfileData = async () => {
       try {
         const response = await fetch("https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata.json");
@@ -20,8 +20,8 @@ const Profile = (props) => {
         }
         const data = await response.json();
         if (data) {
-          const userData = Object.entries(data)[0]; // Get the first user data entry
-          setUserId(userData[0]); // Set the user ID
+          const userData = Object.entries(data)[0]; // Getting  first user data entry
+          setUserId(userData[0]); // Settting  the user ID
           setEnteredName(userData[1].userName || "");
           setEnteredUrl(userData[1].url || "");
         }
@@ -65,7 +65,7 @@ const Profile = (props) => {
     try {
       let response;
       if (userId) {
-        // If userId exists, update the existing data
+        // If userId exists i will  update the existing data
         response = await fetch(
           `https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata/${userId}.json`,
           {
@@ -77,11 +77,11 @@ const Profile = (props) => {
           }
         );
       } else {
-        // If userId does not exist, create new data
+        // If userId does not exist, POST request will execute so rememeber
         response = await fetch(
           "https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata.json",
           {
-            method: "POST", // Use POST to create new data
+            method: "POST", 
             body: JSON.stringify(profileData),
             headers: {
               "Content-Type": "application/json",
@@ -95,7 +95,7 @@ const Profile = (props) => {
       }
 
       if (!userId) {
-        // If new data was created, get the new userId
+        // to remember  If new data  created, get the new userId
         const newUserData = await response.json();
         setUserId(Object.keys(newUserData)[0]);
       }
@@ -105,7 +105,7 @@ const Profile = (props) => {
       setError(null);
 
       alert("Profile saved successfully!");
-      props.onProfileUpdate(); // Call the callback function to update showMessage
+      props.onProfileUpdate(); // Calling  callback 
 
     } catch (error) {
       console.error("Error:", error);
