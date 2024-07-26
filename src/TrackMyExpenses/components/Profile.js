@@ -1,11 +1,39 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Container, Form, Button,Alert,Row,Col } from "react-bootstrap";
 
 const Profile = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredUrl, setEnteredUrl] = useState("");
   const [error, setError] = useState(null); 
+  const [userId, setUserId] = useState(null);
   
+
+  // i will add a useEffect to fetch data 
+
+  useEffect(() => {
+    // Fetch profile data from Firebase on component mount
+    const fetchProfileData = async () => {
+      try {
+        const response = await fetch("https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch profile data");
+        }
+        const data = await response.json();
+        if (data) {
+          const userData = Object.entries(data)[0]; // Get the first user data entry
+          setUserId(userData[0]); // Set the user ID
+          setEnteredName(userData[1].userName || "");
+          setEnteredUrl(userData[1].url || "");
+        }
+      } catch (error) {
+        console.error("Error fetching profile data:", error);
+        setError("Failed to fetch profile data");
+      }
+    };
+
+    fetchProfileData();
+  }, []);
+  // function to fetch finished here inside useefffect
 
   const nameHandler = (event) => {
     setEnteredName(event.target.value);
@@ -33,34 +61,55 @@ const Profile = (props) => {
       url:enteredUrl,
     };
 
-    try{
-      const response=await fetch('https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata.json',
-        {
-          method:'POST',
-          body:JSON.stringify(profileData),
-          headers: {
-            'Content-Type': 'application/json'
+         
+    try {
+      let response;
+      if (userId) {
+        // If userId exists, update the existing data
+        response = await fetch(
+          `https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata/${userId}.json`,
+          {
+            method: "PUT", // Use PUT to update the existing data
+            body: JSON.stringify(profileData),
+            headers: {
+              "Content-Type": "application/json",
+            },
           }
-        }
-
-      );
-      if (!response.ok) {
-        throw new Error('Failed to add user');
+        );
+      } else {
+        // If userId does not exist, create new data
+        response = await fetch(
+          "https://trackmyexpenses-5d3c6-default-rtdb.firebaseio.com/userdata.json",
+          {
+            method: "POST", // Use POST to create new data
+            body: JSON.stringify(profileData),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
       }
 
-    
-      setEnteredName('');
-      setEnteredUrl('');
-   
+      if (!response.ok) {
+        throw new Error("Failed to save user");
+      }
+
+      if (!userId) {
+        // If new data was created, get the new userId
+        const newUserData = await response.json();
+        setUserId(Object.keys(newUserData)[0]);
+      }
+
+      setEnteredName("");
+      setEnteredUrl("");
       setError(null);
 
-      alert('profile added successfully!');
-      props.onProfileUpdate(); 
+      alert("Profile saved successfully!");
+      props.onProfileUpdate(); // Call the callback function to update showMessage
 
-
-    }catch(error){
-      console.error('Error:', error);
-      alert('Failed to add user');
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to save user");
     }
   };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Container ,Button} from "react-bootstrap";
 import './Home.css';
 
@@ -8,6 +8,15 @@ import Profile from "../components/Profile";
 const Home=()=>{
   const[showProfile,setShowProfile]= useState(false);
   const[showMessage,setShowMessage]= useState(false);
+
+  // so that profile always show 80% complete once update 
+  useEffect(() => {
+   
+    const storedShowMessage = localStorage.getItem("showMessage");
+    if (storedShowMessage === "true") {
+      setShowMessage(true);
+    }
+  }, []);
 
   const profileHandler=()=>{
   
@@ -21,6 +30,7 @@ const Home=()=>{
   const profileUpdateHandler = () => {
    setShowProfile(false);
    setShowMessage(true);
+   localStorage.setItem("showMessage", "true");
  };
     
     return(
