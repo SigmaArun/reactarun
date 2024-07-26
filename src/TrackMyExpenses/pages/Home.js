@@ -1,11 +1,14 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useContext } from "react";
 import { Container ,Button} from "react-bootstrap";
+import AuthContext from "../store/AuthContext";
 import './Home.css';
 
 import Profile from "../components/Profile";
+import ExpenseForm from "./ExpenseForm";
 
 
 const Home=()=>{
+  const authCtx=useContext(AuthContext);
   const[showProfile,setShowProfile]= useState(false);
   const[showMessage,setShowMessage]= useState(false);
 
@@ -61,6 +64,9 @@ const Home=()=>{
                <Profile show ={showProfilehandler}  onProfileUpdate={profileUpdateHandler}></Profile>
            }        
            </div>
+      </div>
+      <div className="expenses">
+        {authCtx.isLoggedIn && <ExpenseForm></ExpenseForm>}
       </div>
        
          </Container>

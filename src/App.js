@@ -15,6 +15,7 @@ import VerifyEmail from "./TrackMyExpenses/pages/VerifyEmail";
 import AuthContext from "./TrackMyExpenses/store/AuthContext";
 import ForgotPassword from "./TrackMyExpenses/pages/ForgotPassword";
 
+
 // i love this concept 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const authCtx = useContext(AuthContext);
@@ -40,16 +41,19 @@ const App =()=> {
              
              <Container fluid className="p-0" style={{ marginTop: "56px" }}>
             <Header></Header>
+         
               <Switch>
               <Redirect exact from="/" to="/home" />
               <Route path="/forgot-password" component={ForgotPassword} />
               <PrivateRoute path="/verifyemail"  component={VerifyEmail} />
+              
                <Route path='/home' component={Home}/>
                <Route path="/signup"  component={SignUp}/>
                <Route path="/login" component={Login} />
                </Switch>
             </Container>
           </Router>
+        
           </AuthProvider>
      </>
       
