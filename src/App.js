@@ -13,6 +13,7 @@ import Login from "./TrackMyExpenses/pages/Login";
 import Header from "./TrackMyExpenses/components/Header";
 import VerifyEmail from "./TrackMyExpenses/pages/VerifyEmail";
 import AuthContext from "./TrackMyExpenses/store/AuthContext";
+import ForgotPassword from "./TrackMyExpenses/pages/ForgotPassword";
 
 // i love this concept 
 const PrivateRoute = ({ component: Component, ...rest }) => {
@@ -41,6 +42,7 @@ const App =()=> {
             <Header></Header>
               <Switch>
               <Redirect exact from="/" to="/home" />
+              <Route path="/forgot-password" component={ForgotPassword} />
               <PrivateRoute path="/verifyemail"  component={VerifyEmail} />
                <Route path='/home' component={Home}/>
                <Route path="/signup"  component={SignUp}/>

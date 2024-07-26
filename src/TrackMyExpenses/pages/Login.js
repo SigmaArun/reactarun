@@ -1,7 +1,7 @@
 
 import React ,{useContext, useState}from "react";
 import { Container, Row, Col, Form, Alert, Button } from "react-bootstrap";
-import { useHistory } from 'react-router-dom';
+import { useHistory,Link } from 'react-router-dom';
 import AuthContext from "../store/AuthContext";
 
 const Login=()=>{
@@ -92,6 +92,7 @@ const Login=()=>{
                   onChange={passwordHandler}
                 />
               </Form.Group>
+              <Link to="/forgot-password" className="d-block mt-3">Forgot Password?</Link>
               <Button variant="primary" type="submit">
                 Login
               </Button>
