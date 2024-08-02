@@ -2,15 +2,15 @@ import {createStore} from 'redux';
 
 
 const counterReducer=(state={counter :0}, action)=>{
-    if(action.type==='incrementBY2'){
+    if(action.type==='incrementBY5'){
         return{
-            counter: state.counter +2,
+            counter: state.counter +5,
         }
     }
 
-    if(action.type==='decrementBY2'){
+    if(action.type==='decrementBY5'){
         return{
-            counter: state.counter -2,
+            counter: state.counter -5,
         }
     }
     return state;
