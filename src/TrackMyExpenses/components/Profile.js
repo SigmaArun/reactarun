@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { Container, Form, Button,Alert,Row,Col } from "react-bootstrap";
 
+
 const Profile = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredUrl, setEnteredUrl] = useState("");

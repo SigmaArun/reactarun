@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
+import { useDispatch, useSelector } from 'react-redux';
+import { expensesActions } from '../reduxstore/expenseSlice';
 
 const ExpenseForm = () => {
     const [enteredMoney, setEnteredMoney] = useState("");
     const [enteredDescription, setEnteredDescription] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
-    const [expenses, setExpenses] = useState([]);
     const [error, setError] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
     const [editingId, setEditingId] = useState(null);
+
+    const dispatch = useDispatch();
+    const expenses = useSelector((state) => state.expenses.expenses);
+    const totalExpenses = useSelector((state) => state.expenses.totalExpenses);
 
     useEffect(() => {
         const fetchExpenses = async () => {
@@ -27,14 +32,14 @@ const ExpenseForm = () => {
                         category: data[key].category,
                     });
                 }
-                setExpenses(loadedExpenses);
+                dispatch(expensesActions.setExpenses(loadedExpenses));
             } catch (error) {
                 console.error("Error fetching expenses:", error);
             }
         };
 
         fetchExpenses();
-    }, []);
+    }, [dispatch]);
 
     const moneyHandler = (event) => {
         setEnteredMoney(event.target.value);
@@ -56,8 +61,8 @@ const ExpenseForm = () => {
             if (!response.ok) {
                 throw new Error('Failed to delete item');
             }
-            setExpenses((prevExpenses) => prevExpenses.filter((item) => item.id !== id));
-            alert("Expesne successfully deleted ...")
+            dispatch(expensesActions.deleteExpense(id));
+            alert("Expense successfully deleted.");
         } catch (error) {
             console.error("Failed to delete expense:", error);
         }
@@ -111,11 +116,11 @@ const ExpenseForm = () => {
             const data = await response.json();
 
             if (isEditing) {
-                setExpenses((prevExpenses) => prevExpenses.map((expense) => (expense.id === editingId ? { id: editingId, ...newExpense } : expense)));
+                dispatch(expensesActions.updateExpense({ id: editingId, ...newExpense }));
                 setIsEditing(false);
                 setEditingId(null);
             } else {
-                setExpenses((prevExpenses) => [...prevExpenses, { id: data.name, ...newExpense }]);
+                dispatch(expensesActions.addExpense({ id: data.name, ...newExpense }));
             }
 
             setEnteredMoney("");
@@ -175,6 +180,12 @@ const ExpenseForm = () => {
                                 </li>
                             ))}
                         </ul>
+                        {totalExpenses > 10000 && (
+                            <Alert variant="warning" className="mt-3">
+                                Your expenses have exceeded 10,000 rupees! Consider activating premium features.
+                                <Button variant="success" className="ml-2">Activate Premium</Button>
+                            </Alert>
+                        )}
                     </div>
                 </Col>
             </Row>

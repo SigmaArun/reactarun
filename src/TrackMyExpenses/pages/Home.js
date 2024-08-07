@@ -40,7 +40,9 @@ const Home=()=>{
        <>
        <Container >
         <div className="outerdiv">
+          <div>
          <h2>Welcome to Expenese Tracker App</h2>
+         </div>
 
          <div className="profile">
                

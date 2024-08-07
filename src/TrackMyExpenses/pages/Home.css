@@ -4,16 +4,15 @@
     margin-top: 20px;
   }
   
-  .profile, .expenses {
-    margin-top: 20px;
-  }
+
   
   .profile {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
-  button {
-    margin-top: 20px;
+  .button {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   .expenses {

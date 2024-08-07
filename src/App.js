@@ -1,4 +1,5 @@
 import React,{useContext} from "react";
+import { Provider } from 'react-redux';
 import SignUp from "./TrackMyExpenses/pages/SignUp";
 import { Container } from "react-bootstrap";
 import {
@@ -14,6 +15,7 @@ import Header from "./TrackMyExpenses/components/Header";
 import VerifyEmail from "./TrackMyExpenses/pages/VerifyEmail";
 import AuthContext from "./TrackMyExpenses/store/AuthContext";
 import ForgotPassword from "./TrackMyExpenses/pages/ForgotPassword";
+import store from '../src/TrackMyExpenses/reduxstore/store';
 
 
 // i love this concept 
@@ -35,7 +37,9 @@ const App =()=> {
 
   return (
      
-     <>    <AuthProvider>
+     <>  
+        <Provider store={store}>
+       <AuthProvider>
            
              <Router>
              
@@ -55,6 +59,7 @@ const App =()=> {
           </Router>
         
           </AuthProvider>
+          </Provider>
      </>
       
        
