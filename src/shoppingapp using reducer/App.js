@@ -5,10 +5,10 @@ import Products from './components/Shop/Products';
 import { useSelector } from 'react-redux';
 
 function App() {
-  const cartCtx=useSelector(state=> state.cart.isOpenCart);
+  const cartRdx=useSelector(state=> state.cart.isOpenCart);
   return (
     <Layout>
-      {cartCtx  &&   <Cart /> }
+      {cartRdx  &&   <Cart /> }
     
       <Products />
     </Layout>
