@@ -8,12 +8,14 @@ import ReactDOM from 'react-dom/client';
 // import store from './ReduxProject/store/reduxlogic';
 
 //import App from './ReduxProject/App';
-import App from '../src/App';
+//import App from '../src/App';
+import App from './shoppingapp using reducer/App';
 import reportWebVitals from './reportWebVitals';
 // index.js or App.js
 import { Provider } from 'react-redux';
 //import App from './myreduxproject/App'
-import store from './TrackMyExpenses/reduxstore/store';
+//import store from './TrackMyExpenses/reduxstore/store';
+import store from './shoppingapp using reducer/reduxStore/store';
 
 
 //  import '../node_modules/react-bootstrap/dist/react-bootstrap';
