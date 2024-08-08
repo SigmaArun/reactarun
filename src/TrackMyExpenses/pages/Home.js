@@ -38,7 +38,7 @@ const Home=()=>{
     
     return(
        <>
-       <Container >
+       <Container className="container">
         <div className="outerdiv">
           <div>
          <h2>Welcome to Expenese Tracker App</h2>

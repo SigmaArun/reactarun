@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { useDispatch, useSelector } from 'react-redux';
 import { expensesActions } from '../reduxstore/expenseSlice';
 
+
 const ExpenseForm = () => {
     const [enteredMoney, setEnteredMoney] = useState("");
     const [enteredDescription, setEnteredDescription] = useState("");
@@ -130,6 +131,21 @@ const ExpenseForm = () => {
             console.error("Error sending expense data:", error);
         }
     };
+    // to download file 
+    const downloadCSV = () => {
+        const csvRows = [
+            ["Amount", "Description", "Category"],
+            ...expenses.map(expense => [expense.money, expense.description, expense.category])
+        ];
+
+        const csvContent = csvRows.map(row => row.join(",")).join("\n");
+
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "expenses.csv";
+        link.click();
+    };
 
     return (
         <Container className="d-flex align-items-center justify-content-center" style={{ height: "80vh" }}>
@@ -181,10 +197,11 @@ const ExpenseForm = () => {
                             ))}
                         </ul>
                         {totalExpenses > 10000 && (
-                            <Alert variant="warning" className="mt-3">
-                                Your expenses have exceeded 10,000 rupees! Consider activating premium features.
-                                <Button variant="success" className="ml-2">Activate Premium</Button>
-                            </Alert>
+                             <Alert variant="warning" className="mt-3">
+                             Your expenses have exceeded 10,000 rupees! Consider activating premium features.
+                             <Button variant="success" className="ml-2">Activate Premium</Button>
+                             <Button variant="info" className="ml-2" onClick={downloadCSV}>Download Expenses</Button>
+                         </Alert>
                         )}
                     </div>
                 </Col>
