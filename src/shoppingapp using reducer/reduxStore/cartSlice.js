@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 const cartSlice= createSlice({
     name:'cart',
-    initialState:{isOpenCart:false},
+    initialState:{isOpenCart:false , notification :null},
     reducers:{
         openCart:(state)=>{
             state.isOpenCart=true;
@@ -11,6 +11,14 @@ const cartSlice= createSlice({
         closeCart:(state)=>{
             state.isOpenCart=false;
         },
+        showNotification:(state,action)=>{
+            state.notification={
+                status:action.payload.status,
+                title:action.payload.title,
+                message:action.payload.message,
+            
+            };
+        }
     }
 })
 
