@@ -17,6 +17,7 @@ const SignUp=()=>{
         setPasswordsMatch(enteredPassword === confirmPassword);
       }
     }, [enteredPassword, confirmPassword]);
+    
 
     const emailHandler = (event) => {
         setEnteredEmail(event.target.value);
@@ -51,7 +52,7 @@ const SignUp=()=>{
 
         try{
 
- const response=await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyByqGR1J2yVZHGlFvq-QaigXuZjIz4qrZw",
+ const response=await fetch("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyC7R1l_s-RE1UBewcABpuamdl_MpAasjIA",
     {
 
        method:'POST',
@@ -106,10 +107,7 @@ const SignUp=()=>{
           <Container className="mt-5 mb-5">
         <Row className="justify-content-md-center">
           <Col md={6}>
-          <p>You have to use a  valid Email Id and you can enter any password minimum six character
-            your Account will be created on Generics .please use these email and password to 
-            login to your account when you see login form.
-          </p>
+         
             <h2>SignUp Form</h2>
             {error && <Alert variant="danger">{error}</Alert>} 
             {showSuccessAlert && (
