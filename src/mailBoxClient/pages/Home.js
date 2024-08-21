@@ -5,7 +5,7 @@ const Home=()=>{
     return(
         <>
         <Container>
-        <h3>Welcome to home page </h3>
+        <h3>Welcome to your mailbox </h3>
         </Container>
         </>
     )

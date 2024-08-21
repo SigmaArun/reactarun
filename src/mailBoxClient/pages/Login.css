@@ -1,0 +1,68 @@
+
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-color: #f8f9fa;
+  }
+  
+  .wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    background-color: #007bff;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 70%);
+  }
+  
+  .form-container {
+    margin-top: 110px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-text {
+    color: #6c757d;
+  }
+  
+  .signup-link {
+    color: #28a745;
+    text-decoration: none;
+  }
+  
